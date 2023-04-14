@@ -4,12 +4,11 @@ This guide outlines the steps to install and use Ubuntu for Windows Subsystem fo
 
 # What's included
 
+Like source repo, just without any proxy config
+
 ## Configuration
 
 - system ca-certificates for zscaler, stxt and srg
-- HTTP_PROXY and HTTPS_PROXY
-- Git proxy settings
-- Npm proxy and certificates
 - Version pinnings for kubectl and helm
 
 # Features

@@ -1,4 +1,4 @@
-$dist = "ubuntu-wpaas"
+$dist = "ubuntu-wpaas-noproxy"
 $rootfs = "$dist-rootfs.tar.gz"
 
 try {
