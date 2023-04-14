@@ -31,11 +31,11 @@ try {
         }
     }
     
-    wsl -d $dist -u $user --cd ~ -- curl --insecure -L https://github.com/swisstxt/wpaas-wsl-ubuntu/archive/refs/heads/master.tar.gz -o install.tar.gz
+    wsl -d $dist -u $user --cd ~ -- curl --insecure -L https://github.com/asnapper/wsl-ubuntu/archive/refs/heads/master.tar.gz -o install.tar.gz
     wsl -d $dist -u $user --cd ~ -- tar xvzf install.tar.gz
-    wsl -d $dist -u $user --cd ~/wpaas-wsl-ubuntu-master -- bash install.sh
+    wsl -d $dist -u $user --cd ~/wsl-ubuntu-master -- bash install.sh
     wsl --terminate $dist
-    wsl -d $dist -u $user --cd ~/wpaas-wsl-ubuntu-master -- bash post_install.sh
+    wsl -d $dist -u $user --cd ~/wsl-ubuntu-master -- bash post_install.sh
 
 } catch {
     Write-Output "$($_.ScriptStackTrace)"
